@@ -305,9 +305,9 @@ h2 {
 .card p { color: var(--muted); font-size: 0.98rem; }
 
 /* ---------- Trio (who we work with) ---------- */
-.trio {
+.quartet {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -524,7 +524,7 @@ a.contact-card:hover { background: rgba(255, 255, 255, 0.13); }
 /* ---------- Responsive ---------- */
 @media (max-width: 820px) {
   .cards { grid-template-columns: 1fr; }
-  .trio { grid-template-columns: 1fr; }
+  .quartet { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .contact-cards { grid-template-columns: 1fr; }
