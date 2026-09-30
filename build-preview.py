@@ -39,6 +39,7 @@ html[data-theme="dark"] .about-card { background: #152219; }
 html[data-theme="dark"] .card-icon { background: rgba(143, 208, 164, 0.14); color: #8fd0a4; }
 html[data-theme="dark"] .kicker,
 html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .hero-tagline,
 html[data-theme="dark"] .step-num,
 html[data-theme="dark"] .about-card .tagline { color: #e8a37e; }
 html[data-theme="dark"] .kicker::before,
@@ -70,12 +71,14 @@ def datauri(path: Path, width: int) -> str:
 
 
 def main() -> None:
-    logo = datauri(ROOT / "assets/logo.png", 640)
+    emblem = datauri(ROOT / "assets/emblem.png", 640)
+    tower = datauri(ROOT / "assets/tower.png", 640)
     mark = datauri(ROOT / "assets/mark.png", 144)
     html = (ROOT / "index.html").read_text()
     css = (ROOT / "styles.css").read_text()
     body = re.search(r"<body>(.*)</body>", html, re.S).group(1)
-    body = body.replace('src="assets/logo.png"', f'src="{logo}"')
+    body = body.replace('src="assets/emblem.png"', f'src="{emblem}"')
+    body = body.replace('src="assets/tower.png"', f'src="{tower}"')
     body = body.replace('src="assets/mark.png"', f'src="{mark}"')
     widget = (
         '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"'

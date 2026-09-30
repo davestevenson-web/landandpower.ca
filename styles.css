@@ -112,7 +112,28 @@ img { max-width: 100%; height: auto; display: block; }
 
 .hero-logo {
   width: 168px;
-  margin: 0 auto 28px;
+  margin: 26px auto 0;
+  padding: 10px;
+  background: #f2f6f2;
+  border-radius: 26px;
+  box-shadow: 0 10px 30px rgba(2,105,45,.14);
+}
+
+.hero-name {
+  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--green-deep);
+  margin: 20px 0 6px;
+}
+
+.hero-tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--copper);
+  margin-bottom: 34px;
 }
 
 .eyebrow {
@@ -372,7 +393,7 @@ h2 {
   padding: 36px 32px;
 }
 
-.about-mark { width: 56px; border-radius: 12px; margin-bottom: 18px; }
+.about-lockup { width: 100%; border-radius: 10px; margin-bottom: 22px; }
 
 .about-card h3 { font-size: 1.3rem; font-weight: 800; color: var(--green-deep); }
 
