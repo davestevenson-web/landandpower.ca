@@ -122,20 +122,23 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero-name {
-  font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+  font-size: clamp(2rem, 6vw, 3.4rem);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
   color: var(--green-deep);
-  margin: 20px 0 6px;
+  margin: 22px 0 10px;
 }
 
 .hero-tagline {
   text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.88rem;
+  letter-spacing: 0.32em;
+  font-size: clamp(0.95rem, 2.4vw, 1.15rem);
   font-weight: 700;
   color: var(--copper);
-  margin-bottom: 34px;
+  margin-bottom: 36px;
+  text-wrap: balance;
 }
 
 .eyebrow {
@@ -530,6 +533,8 @@ a.contact-card:hover { background: rgba(255, 255, 255, 0.13); }
   .nav-links a:not(.nav-cta) { display: none; }
   .hero { padding: 64px 0 56px; }
   .section { padding: 64px 0; }
+  .hero-name { font-size: 2rem; }
+  .hero-tagline { font-size: 0.8rem; letter-spacing: 0.22em; white-space: nowrap; }
 }
 
 /* ---------- In-chat dark-theme preview support (preview only) ---------- */
@@ -626,7 +631,7 @@ html[data-theme="dark"] .hero-logo {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
             </div>
             <h3>Site identification &amp; land partnerships</h3>
-            <p>We identify land suited to data center development and work directly with landowners to bring sites to market. The process is fair and transparent, and their interests are protected at every step.</p>
+            <p>We identify land suited to data center development and work directly with landowners to bring sites to market. Their interests come first: the process is fair, transparent, and structured to protect them at every step.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
@@ -691,7 +696,7 @@ html[data-theme="dark"] .hero-logo {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
             </div>
             <h3>Landowners</h3>
-            <p>You may be sitting on land with real development potential. We help you understand what your property could support and structure a fair path to market, with your interests protected at every step.</p>
+            <p>You may be sitting on land with real development potential. We help you understand what your property could support and structure a fair path to market around your interests, protecting them at every step.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
@@ -747,7 +752,7 @@ html[data-theme="dark"] .hero-logo {
           </div>
           <div class="faq-item">
             <h3>Where do you operate?</h3>
-            <p>We're an Ontario-based company, focused on data center development here, and we take on projects across Canada.</p>
+            <p>We are an Ontario-based company, focused on data center development here, and we take on projects across Canada.</p>
           </div>
           <div class="faq-item">
             <h3>When is the right time to talk?</h3>
