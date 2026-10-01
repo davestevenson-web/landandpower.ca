@@ -71,13 +71,23 @@ img { max-width: 100%; height: auto; display: block; }
 .brand-mark { width: 36px; height: 36px; border-radius: 8px; }
 
 .brand-text {
-  font-size: 1.05rem;
-  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-size: 1.02rem;
+  font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--green);
 }
 
-.brand-text strong { font-weight: 800; }
+.brand-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--copper);
+}
 
 .nav-links { display: flex; align-items: center; gap: 28px; }
 
