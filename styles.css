@@ -582,6 +582,7 @@ h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.
 .hero-eyebrow { text-align: center; margin-bottom: 20px; }
 .hero-brand { text-align: center; margin-bottom: 44px; }
 #who .card { padding-bottom: 44px; }
+#who .card p:last-child { margin-top: 14px; }
 .hero-logo { width: 168px; margin: 0 auto; padding: 0; background: none; border-radius: 0; box-shadow: none; }
 .hero-name { font-size: 1.55rem; margin: 20px 0 8px; }
 .hero-tagline { font-size: 0.82rem; letter-spacing: 0.28em; margin-bottom: 0; }
